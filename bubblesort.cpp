@@ -6,11 +6,11 @@ void afterprint(int*a,int b);
 int main(){
     int size;                    //input size
     int x;                     
-    int *string;                // input array
+    int *string;                // input sequence
     cout<<"輸入你的siez:";
     cin>>size;
     cout<<"輸入想sort的數字:";
-    for(int i=0;i<size;i++){   // initiallize input array
+    for(int i=0;i<size;i++){   // initiallize input sequence
         cin>>x;
         string[i]=x;
     }
@@ -28,7 +28,7 @@ void bubblesort(int*a,int b){        //sort method
     }
 
 }
-void afterprint(int*a,int b){       // print the array after sort
+void afterprint(int*a,int b){       // print the sequence after sort
     for(int i=0;i<b;i++){
         cout<<a[i]<<" ";
     }
